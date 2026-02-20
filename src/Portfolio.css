@@ -1,0 +1,148 @@
+/* Page wrapper */
+.portfolio-page {
+  width: 100%;
+  padding: 40px 16px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Main container card */
+.portfolio-card {
+  width: 100%;
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 32px 28px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+/* Title */
+.portfolio-title {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+
+.portfolio-title-underline {
+  width: 90px;
+  height: 4px;
+  margin: 12px auto 28px auto;
+  border-radius: 999px;
+  background: #222;
+}
+
+/* Flexbox layout for cards */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: center;
+}
+
+/* Each project card */
+.project-card {
+  width: 320px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.10);
+  overflow: hidden; /* keeps image corners rounded */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image placeholder */
+.project-image {
+  height: 170px;
+  background: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image-text {
+  color: #f2f2f2;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Body */
+.project-body {
+  padding: 18px 18px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #222;
+}
+
+.project-desc {
+  margin: 0;
+  color: #444;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Technology pills */
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-pill {
+  background: #efefef;
+  color: #222;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Buttons */
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  padding: 9px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 13px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+/* Primary + secondary button styles */
+.btn-primary {
+  background: #1f6feb;
+  color: white;
+}
+
+.btn-secondary {
+  background: #e9e9e9;
+  color: #222;
+  border-color: #d7d7d7;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .project-card {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
